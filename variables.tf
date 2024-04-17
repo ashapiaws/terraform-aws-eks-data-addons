@@ -364,3 +364,17 @@ variable "superset_helm_config" {
   type        = any
   default     = {}
 }
+#---------------------------------------------------
+# Redpanda
+#---------------------------------------------------
+variable "enable_redpanda" {
+  description = "Enable Redpanda Add-On"
+  type        = bool
+  default     = false
+}
+
+variable "redpanda_helm_config" {
+  description = "Redpanda Helm Chart config"
+  type        = any
+  default     = {}
+}
